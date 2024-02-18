@@ -1,0 +1,71 @@
+body {
+    width: 1440px;
+    padding-left: 156px;
+}
+
+button {
+    background-color: rgba(78, 117, 255, 1);
+    width: 360px;
+    height: 40px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 4%;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    margin-top: 24px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(108, 140, 255, 1);
+}
+
+form {
+    border-color: rgba(128, 128, 128, 1);
+    border-radius: 4px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+fieldset {
+    border-color: rgba(128, 128, 128, 1);
+    border-radius: 4px;
+    width: 333px;
+    height: 64px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.delay {
+    padding-left: 5px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+label {
+    padding-left: 48px;
+    padding-top: 30px;
+    display: inline;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
