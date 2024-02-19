@@ -6,7 +6,7 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
 
-const startBtn = document.querySelector("button");
+const startBtn = document.querySelector("[data-start]");
 const dateInput = document.getElementById("datetime-picker");
 const clockface = document.querySelector(".timer");
 startBtn.disabled = true;
@@ -42,7 +42,11 @@ class Timer {
     start(startTime) {
         this.interval = setInterval(() => {
             const currentTime = Date.now();
-            const delta = currentTime - startTime;
+            const delta = startTime - currentTime;
+            if (delta <= 0) {
+                this.stop();
+                return;
+            }
             const time = this.convertMs(delta);
 
             this.onTick(time);
